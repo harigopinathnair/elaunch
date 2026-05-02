@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <a href="/" class="logo">
-                <i class="fas fa-paper-plane"></i>
+                <img src="elaunch-icon.png" alt="eLaunch Solutions Logo">
                 elaunch solutions
             </a>
             <nav>
@@ -210,7 +210,7 @@
             <div class="footer-grid">
                 <div class="footer-info">
                     <a href="/" class="logo">
-                        <i class="fas fa-paper-plane"></i>
+                        <img src="elaunch-icon.png" alt="eLaunch Solutions Logo">
                         elaunch solutions
                     </a>
                     <p>501, Adani Amogha, Shantigram, S.G Highway, Ahmedabad, Gujarat – 382421, India</p>

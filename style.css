@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
 
 :root {
-    --primary: #1d70d1;
-    --primary-hover: #155bb5;
+    --primary: #6366f1; /* Indigo from logo */
+    --primary-hover: #4f46e5;
     --text-dark: #111827;
     --text-gray: #4b5563;
     --bg-white: #ffffff;
@@ -47,11 +47,12 @@ ul {
 
 /* Header */
 header {
-    padding: 1.25rem 0;
-    background: var(--bg-white);
+    padding: 0.75rem 0;
+    background: var(--primary);
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
 }
 
 header .container {
@@ -66,14 +67,18 @@ header .container {
     gap: 0.75rem;
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary);
+    font-weight: 700;
+    color: #fff;
+    text-transform: lowercase;
 }
 
-.logo i {
-    font-size: 1.75rem;
-    transform: rotate(-15deg);
+.logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
 }
+
+
 
 .nav-links {
     display: flex;
@@ -81,33 +86,46 @@ header .container {
 }
 
 .nav-links a {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
-    color: var(--text-dark);
+    color: rgba(255, 255, 255, 0.9);
     transition: var(--transition);
 }
 
 .nav-links a:hover {
+    color: #fff;
+}
+
+header .btn-pill {
+    background: #fff;
     color: var(--primary);
+}
+
+header .btn-pill:hover {
+    background: #f3f4f6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn-pill {
     background: var(--primary);
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.75rem;
     border-radius: 9999px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.95rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition);
+    border: none;
+    cursor: pointer;
 }
 
 .btn-pill:hover {
     background: var(--primary-hover);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(29, 112, 209, 0.2);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 /* Hero Section */
@@ -421,6 +439,10 @@ footer {
     color: #fff;
     margin-bottom: 2rem;
     display: inline-flex;
+}
+
+.footer-info .logo img {
+    filter: brightness(0) invert(1); /* Optional: make footer logo white if desired, or keep original */
 }
 
 .footer-info p {
