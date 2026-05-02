@@ -72,10 +72,10 @@ header .container {
 }
 
 .logo img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 
@@ -442,10 +442,10 @@ footer {
 }
 
 .footer-info .logo img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .footer-info p {
