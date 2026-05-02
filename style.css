@@ -73,9 +73,10 @@ header .container {
 }
 
 .logo img {
-    height: 40px;
-    width: auto;
-    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 
@@ -442,7 +443,11 @@ footer {
 }
 
 .footer-info .logo img {
-    filter: brightness(0) invert(1); /* Optional: make footer logo white if desired, or keep original */
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    filter: brightness(0) invert(1);
 }
 
 .footer-info p {
