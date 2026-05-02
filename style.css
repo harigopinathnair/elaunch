@@ -47,12 +47,12 @@ ul {
 
 /* Header */
 header {
-    padding: 0.75rem 0;
-    background: var(--primary);
+    padding: 0.5rem 0;
+    background: var(--bg-white);
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 header .container {
@@ -68,12 +68,12 @@ header .container {
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-dark);
 }
 
 .logo img {
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -88,23 +88,23 @@ header .container {
 .nav-links a {
     font-weight: 600;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-dark);
     transition: var(--transition);
 }
 
 .nav-links a:hover {
-    color: #fff;
-}
-
-header .btn-pill {
-    background: #fff;
     color: var(--primary);
 }
 
+header .btn-pill {
+    background: var(--primary);
+    color: #fff;
+}
+
 header .btn-pill:hover {
-    background: #f3f4f6;
+    background: var(--primary-hover);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
 .btn-pill {
@@ -442,8 +442,8 @@ footer {
 }
 
 .footer-info .logo img {
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
     object-fit: contain;
     border-radius: 10px;
     filter: brightness(0) invert(1);
